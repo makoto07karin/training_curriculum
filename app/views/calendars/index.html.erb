@@ -8,8 +8,13 @@
 <% end %>
 
 
+
 <div class='calendar'>
     <% @week_days.each do |day| %>
+
+<div class='calendar'>
+   <% @week_days.each do |day| %>
+
       <div class='item'>
         <div class='date'>
           <%= day[:month] %>/<%= day[:date] %>/<%= day[:wday] %>
@@ -22,5 +27,8 @@
          <% end %>
         </ul>
       </div>
+
     <% end %>
+   <% end %>
+
 </div>
